@@ -1,0 +1,29 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+
+/* CSS para las cards */
+.example-card {
+  max-width: 400px;
+}
+
+mat-card {
+  margin: auto;
+  width: 40%;
+  display: block;
+  margin-top: 2rem;
+}
+
+/* ccs para los imput */
+.example-full-width {
+  width: 100%;
+}
+
+/* ccs para el boton save */
+
+mat-form-field, input {
+  width: 100%
+
+}

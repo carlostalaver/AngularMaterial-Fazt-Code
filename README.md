@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Para los datos de prueba eso https://jsonplaceholder
+
+###\_limit=10 para limitar el numero de registros que deseo obtener
+https://jsonplaceholder.typicode.com/photos?_limit=10
+
+### 1rem es equivalente a 16px
+
+## Referencia de esta app en:
+https://www.youtube.com/watch?v=n5kTqHmLtN8
+Angular Material 7 Tutorial
+canal de youtube: Fazt Code
