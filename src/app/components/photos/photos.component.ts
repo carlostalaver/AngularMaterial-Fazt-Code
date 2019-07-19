@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PhotosService } from '../../service/photos.service';
+import { PhotosService } from 'src/service/photos.service';
 
 @Component({
   selector: 'app-photos',
@@ -17,7 +17,6 @@ export class PhotosComponent implements OnInit {
       .subscribe(res => {
         this.photos = res;
         console.log('--> photos', this.photos);
-        
       });
   }
 

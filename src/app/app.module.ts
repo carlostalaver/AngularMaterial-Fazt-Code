@@ -5,12 +5,17 @@ import { HttpClientModule} from "@angular/common/http";
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
-import { PhotosComponent } from './photos/photos.component';
+import { DataComponent, MatPaginatorIntlCro } from './components/data/data.component';
+import { AppComponentOld1 } from './app.componentOld-1';
+import { PhotosComponent } from './components/photos/photos.component';
+import { MatPaginatorIntl } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
     AppComponent,
     PhotosComponent,
+    DataComponent,
+    AppComponentOld1
   ],
   imports: [
     BrowserModule,
@@ -18,7 +23,7 @@ import { PhotosComponent } from './photos/photos.component';
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [{ provide: MatPaginatorIntl, useClass: MatPaginatorIntlCro}],
+  bootstrap: [AppComponent /* AppComponentOld1 */]
 })
 export class AppModule { }
